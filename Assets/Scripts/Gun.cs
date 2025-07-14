@@ -21,13 +21,11 @@ public class Gun : MonoBehaviour
     private void StartShoot()
     {
         isShoot = true;
-        print(isShoot);
     }
 
     private void StopSoot()
     {
         isShoot = false;
-        print(isShoot);
     }
 
     private IEnumerator LifeCycle()

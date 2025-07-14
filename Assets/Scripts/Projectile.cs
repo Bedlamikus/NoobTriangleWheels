@@ -8,6 +8,11 @@ public class Projectile : MonoBehaviour
     public float speed;
     private float timer = 0f;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
