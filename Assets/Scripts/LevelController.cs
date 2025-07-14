@@ -110,7 +110,6 @@ public class LevelController : MonoBehaviour
 
     private void SpawnCarAt(Vector3 position, Quaternion rotation)
     {
-        print(position);
         currentCar = Instantiate(currentPrefab, position, rotation);
 
         // Всегда меняем спрайт на выбранный
@@ -140,20 +139,10 @@ public class LevelController : MonoBehaviour
         checkPoint = point;
     }
 
-    public void ChangeCarColor(Color newColor)
-    {
-        // Устаревший метод - теперь используется ChangeVehicleSprite
-        if (currentCar != null)
-        {
-            currentCar.ChangeColor(newColor);
-        }
-    }
-
     public void ChangeVehicleSprite(int vehicleIndex)
     {
         Debug.Log($"LevelController: ChangeVehicleSprite called with vehicleIndex = {vehicleIndex}");
         
-        // Сохраняем выбранный индекс
         PlayerPrefs.SetInt("VEHICLE_INDEX", vehicleIndex);
         PlayerPrefs.Save();
         
@@ -168,11 +157,10 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    public void ChangeGunSprite(int gunIndex)
+    public void ChangeGun(int gunIndex)
     {
         Debug.Log($"LevelController: ChangeGunSprite called with gunIndex = {gunIndex}");
         
-        // Сохраняем выбранный индекс оружия
         PlayerPrefs.SetInt("GUN_INDEX", gunIndex);
         PlayerPrefs.Save();
         

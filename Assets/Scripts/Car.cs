@@ -10,12 +10,6 @@ public class Car : MonoBehaviour
         controller.Freeze();
     }
 
-    public void ChangeColor(Color newColor)
-    {
-        var controller = GetComponentInChildren<CarController2D>();
-        controller.SetColor(newColor);
-    }
-
     public void ChangeVehicleSprite(int vehicleIndex)
     {
         Debug.Log($"Car: ChangeVehicleSprite called with vehicleIndex = {vehicleIndex}");

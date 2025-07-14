@@ -3,36 +3,58 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-// A behaviour that is attached to a playable
-public class Gun : PlayableBehaviour
+public class Gun : MonoBehaviour
 {
-    // Called when the owning graph starts playing
-    public override void OnGraphStart(Playable playable)
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private Projectile projectilePrefab;
+    [SerializeField] private GunSettings settings;
+
+    private bool isShoot = false;
+
+    private void Start()
     {
-        
+        GlobalEvents.StartShoot.AddListener(StartShoot);
+        GlobalEvents.StopShoot.AddListener(StopSoot);
+        StartCoroutine(LifeCycle());
     }
 
-    // Called when the owning graph stops playing
-    public override void OnGraphStop(Playable playable)
+    private void StartShoot()
     {
-        
+        isShoot = true;
+        print(isShoot);
     }
 
-    // Called when the state of the playable is set to Play
-    public override void OnBehaviourPlay(Playable playable, FrameData info)
+    private void StopSoot()
     {
-        
+        isShoot = false;
+        print(isShoot);
     }
 
-    // Called when the state of the playable is set to Paused
-    public override void OnBehaviourPause(Playable playable, FrameData info)
-    {
-        
+    private IEnumerator LifeCycle()
+    { 
+        while (true)
+        {
+            if (isShoot == true)
+            {
+                for (int i = 0; i < settings.countBulletsPerTime; i++)
+                {
+                    if (isShoot == false) continue;
+                    SpawnBullet();
+                    if (i < settings.countBulletsPerTime - 1)
+                        yield return new WaitForSeconds(settings.cooldownBeetwenBullets);
+                }
+                if (isShoot == true)
+                    yield return new WaitForSeconds(settings.cooldownBeetwenShooting);
+            }
+            yield return null;
+        }
     }
 
-    // Called each frame while the state is set to Play
-    public override void PrepareFrame(Playable playable, FrameData info)
+    private void SpawnBullet()
     {
-        
+        var projectile = Instantiate(projectilePrefab);
+        projectile.transform.position = shootPoint.position;
+        projectile.transform.rotation = shootPoint.rotation;
+        projectile.speed = settings.bulletSpeed;
     }
 }

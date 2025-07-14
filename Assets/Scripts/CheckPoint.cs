@@ -12,6 +12,8 @@ public class CheckPoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (activated == true) return;
+        var carController2D = collision.GetComponent<CarController2D>();
+        if (carController2D == null) return;
 
         activated = true;
         StartCoroutine(Activate());

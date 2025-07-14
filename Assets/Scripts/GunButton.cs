@@ -20,7 +20,7 @@ public class GunButton : MonoBehaviour
         if (levelController != null)
         {
             Debug.Log($"GunButton: LevelController found, calling ChangeGunSprite({gunIndex})");
-            levelController.ChangeGunSprite(gunIndex);
+            levelController.ChangeGun(gunIndex);
         }
         else
         {

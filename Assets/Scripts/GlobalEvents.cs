@@ -16,4 +16,7 @@ public class GlobalEvents : MonoBehaviour
 
     public static UnityEvent SpawnTrianglesWheels = new();
     public static UnityEvent SpawnDefaultWheels = new();
+
+    public static UnityEvent StartShoot = new();
+    public static UnityEvent StopShoot = new();
 }

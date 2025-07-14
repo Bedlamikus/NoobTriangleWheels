@@ -13,7 +13,7 @@ public class CarController2D : MonoBehaviour
     public Sprite[] vehicleSprites = new Sprite[4]; // Vehicle1, Vehicle2, Vehicle3, Vehicle4
 
     [Header("Gun Sprites")]
-    public Sprite[] gunSprites = new Sprite[4]; // Gun1, Gun2, Gun3, Gun4
+    public Gun[] guns; // Gun1, Gun2, Gun3, Gun4
 
     private float moveInput;
     private float rotateInput;
@@ -66,12 +66,6 @@ public class CarController2D : MonoBehaviour
         carBody.AddTorque(rotateInput * LevelController.Instance.settings.airRotationTorque);
     }
 
-    public void SetColor(Color newColor)
-    {
-        // Устаревший метод - теперь используется SetVehicleSprite
-        coloredBack.color = newColor;
-    }
-
     public void SetVehicleSprite(int vehicleIndex)
     {
         Debug.Log($"CarController2D: SetVehicleSprite called with vehicleIndex = {vehicleIndex}");
@@ -104,31 +98,16 @@ public class CarController2D : MonoBehaviour
     public void SetGunSprite(int gunIndex)
     {
         Debug.Log($"CarController2D: SetGunSprite called with gunIndex = {gunIndex}");
-        Debug.Log($"CarController2D: gunSprites.Length = {gunSprites.Length}");
+        Debug.Log($"CarController2D: gunSprites.Length = {guns.Length}");
         
-        if (gunIndex >= 0 && gunIndex < gunSprites.Length && gunSprites[gunIndex] != null)
+        if (gunIndex >= 0 && gunIndex < guns.Length && guns[gunIndex] != null)
         {
             Debug.Log($"CarController2D: Setting gun sprite to gunSprites[{gunIndex}]");
             
-            // Находим объект Gun в дочерних объектах
-            Transform gunTransform = transform.Find("Gun");
-            if (gunTransform != null)
-            {
-                SpriteRenderer gunSpriteRenderer = gunTransform.GetComponent<SpriteRenderer>();
-                if (gunSpriteRenderer != null)
-                {
-                    gunSpriteRenderer.sprite = gunSprites[gunIndex];
-                    SaveGunIndex(gunIndex);
-                }
-                else
-                {
-                    Debug.LogError("CarController2D: Gun SpriteRenderer not found!");
-                }
-            }
-            else
-            {
-                Debug.LogError("CarController2D: Gun object not found!");
-            }
+                for (int i = 0; i < guns.Length; i++)
+                    guns[i].gameObject.SetActive(false);
+                guns[gunIndex].gameObject.SetActive(true);
+                SaveGunIndex(gunIndex);
         }
         else
         {
