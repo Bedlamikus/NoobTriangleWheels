@@ -30,6 +30,11 @@ public class WheelController2D : MonoBehaviour
         }
     }
 
+    public void Stop()
+    {
+        rb.angularVelocity = 0;
+    }
+
     public bool IsTouchingGround()
     {
         return rb.IsTouchingLayers();

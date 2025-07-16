@@ -17,6 +17,8 @@ public class CarController2D : MonoBehaviour
 
         GlobalEvents.PlayerMove.AddListener(SetDirection);
         GlobalEvents.PlayerRotate.AddListener(SetRotation);
+        GlobalEvents.PauseGame.AddListener(Pause);
+        GlobalEvents.ResumeGame.AddListener(Resume);
     }
 
     public void Freeze()
@@ -54,4 +56,19 @@ public class CarController2D : MonoBehaviour
 
         carBody.AddTorque(rotateInput * LevelController.Instance.settings.airRotationTorque);
     }
+
+    private void Pause()
+    {
+        freeze = true;
+        carBody.isKinematic = true;
+        leftWheel.Stop();
+        rightWheel.Stop();
+        Destroy(this);
+    }
+
+    private void Resume()
+    {
+        freeze = false;
+    }
+
 }

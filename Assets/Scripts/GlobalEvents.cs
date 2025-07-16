@@ -14,9 +14,17 @@ public class GlobalEvents : MonoBehaviour
     public static UnityEvent StartGame = new();
     public static UnityEvent StartMainMenu = new();
 
+    public static UnityEvent PauseGame = new();
+    public static UnityEvent ResumeGame = new();
+
     public static UnityEvent SpawnTrianglesWheels = new();
     public static UnityEvent SpawnDefaultWheels = new();
 
     public static UnityEvent StartShoot = new();
     public static UnityEvent StopShoot = new();
+
+    public static UnityEvent ShowSadBanner = new();
+    public static UnityEvent SadBannerShowed = new();
+    public static UnityEvent SadBannerHided = new();
+    public static UnityEvent HideSadBanner = new();
 }

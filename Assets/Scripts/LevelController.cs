@@ -40,7 +40,6 @@ public class LevelController : MonoBehaviour
 
         GlobalEvents.Victroy.AddListener(LoadNextLevel);
         GlobalEvents.CheckPoint.AddListener(SetCheckPoint);
-        GlobalEvents.PlayerDie.AddListener(RespawnCar);
         GlobalEvents.Respawn.AddListener(RespawnCar);
         GlobalEvents.StartGame.AddListener(StartGame);
         GlobalEvents.StartMainMenu.AddListener(LoadMainMenu);
@@ -49,7 +48,6 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        // Всегда начинаем с вагонетки (CarDefaultWheel)
         currentPrefab = carPrefabDefaultWheels;
         checkPoint = spawnTransform.position;
         SpawnCarAt(checkPoint, spawnTransform.rotation);
@@ -62,7 +60,6 @@ public class LevelController : MonoBehaviour
 
     public void RespawnCar()
     {
-        // Всегда респауним вагонетку (CarDefaultWheel)
         currentPrefab = carPrefabDefaultWheels;
         
         DestroyCar();

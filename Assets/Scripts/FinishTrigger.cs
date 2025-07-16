@@ -16,6 +16,7 @@ public class FinishTrigger : MonoBehaviour
         isDestroy = true;
         conffetti.SetActive(true);
         StartCoroutine(VictoryDestroy());
+        GlobalEvents.PauseGame.Invoke();
     }
 
     private IEnumerator VictoryDestroy()
