@@ -19,7 +19,6 @@ public class LevelController : MonoBehaviour
     public CarSettings settings;
 
     public Car carPrefabDefaultWheels;
-    public Car carPrefabTriangleWheels;
 
     public Car currentPrefab;
 
@@ -29,21 +28,6 @@ public class LevelController : MonoBehaviour
     private Car currentCar;
 
     public static LevelController Instance { get; private set; }
-
-    [SerializeField] private bool mainMenu = false;
-
-    private bool triangleWheels
-    {
-        get
-        {
-            return PlayerPrefs.GetInt("TRIANGLE", 0) == 1;
-        }
-        set
-        {
-            PlayerPrefs.SetInt("TRIANGLE", value == true ? 1 : 0);
-            PlayerPrefs.Save();
-        }
-    }
 
     private void Awake()
     {
@@ -60,17 +44,13 @@ public class LevelController : MonoBehaviour
         GlobalEvents.Respawn.AddListener(RespawnCar);
         GlobalEvents.StartGame.AddListener(StartGame);
         GlobalEvents.StartMainMenu.AddListener(LoadMainMenu);
-        GlobalEvents.SpawnTrianglesWheels.AddListener(SpawnTriangleCar);
         GlobalEvents.SpawnDefaultWheels.AddListener(SpawnDefaultCar);
-
-        triangleWheels = false;
     }
 
     private void Start()
     {
         // Всегда начинаем с вагонетки (CarDefaultWheel)
         currentPrefab = carPrefabDefaultWheels;
-        triangleWheels = false;
         checkPoint = spawnTransform.position;
         SpawnCarAt(checkPoint, spawnTransform.rotation);
     }
@@ -84,7 +64,6 @@ public class LevelController : MonoBehaviour
     {
         // Всегда респауним вагонетку (CarDefaultWheel)
         currentPrefab = carPrefabDefaultWheels;
-        triangleWheels = false;
         
         DestroyCar();
         SpawnCarAt(checkPoint, Quaternion.identity);
@@ -111,17 +90,6 @@ public class LevelController : MonoBehaviour
     private void SpawnCarAt(Vector3 position, Quaternion rotation)
     {
         currentCar = Instantiate(currentPrefab, position, rotation);
-
-        // Всегда меняем спрайт на выбранный
-        int savedVehicleIndex = PlayerPrefs.GetInt("VEHICLE_INDEX", 0);
-        currentCar.ChangeVehicleSprite(savedVehicleIndex);
-
-        // Всегда меняем спрайт оружия на выбранный
-        int savedGunIndex = PlayerPrefs.GetInt("GUN_INDEX", 0);
-        currentCar.ChangeGunSprite(savedGunIndex);
-
-        if (mainMenu == true)
-            currentCar.Freeze();
     }
 
 
@@ -139,42 +107,6 @@ public class LevelController : MonoBehaviour
         checkPoint = point;
     }
 
-    public void ChangeVehicleSprite(int vehicleIndex)
-    {
-        Debug.Log($"LevelController: ChangeVehicleSprite called with vehicleIndex = {vehicleIndex}");
-        
-        PlayerPrefs.SetInt("VEHICLE_INDEX", vehicleIndex);
-        PlayerPrefs.Save();
-        
-        if (currentCar != null)
-        {
-            Debug.Log($"LevelController: Calling currentCar.ChangeVehicleSprite({vehicleIndex})");
-            currentCar.ChangeVehicleSprite(vehicleIndex);
-        }
-        else
-        {
-            Debug.LogWarning("LevelController: currentCar is null!");
-        }
-    }
-
-    public void ChangeGun(int gunIndex)
-    {
-        Debug.Log($"LevelController: ChangeGunSprite called with gunIndex = {gunIndex}");
-        
-        PlayerPrefs.SetInt("GUN_INDEX", gunIndex);
-        PlayerPrefs.Save();
-        
-        if (currentCar != null)
-        {
-            Debug.Log($"LevelController: Calling currentCar.ChangeGunSprite({gunIndex})");
-            currentCar.ChangeGunSprite(gunIndex);
-        }
-        else
-        {
-            Debug.LogWarning("LevelController: currentCar is null!");
-        }
-    }
-
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -185,21 +117,9 @@ public class LevelController : MonoBehaviour
         SceneManager.LoadScene(currentLevel);
     }
 
-    private void SpawnTriangleCar()
-    {
-        if (triangleWheels == true) return;
-        currentPrefab = carPrefabTriangleWheels;
-        triangleWheels = true;
-        var position = currentCar.bodyRigidBody.transform.position;
-        var rotation = currentCar.bodyRigidBody.transform.rotation;
-        DestroyCar();
-        SpawnCarAt(position, rotation);
-    }
     private void SpawnDefaultCar()
     {
-        if (triangleWheels == false) return;
         currentPrefab = carPrefabDefaultWheels;
-        triangleWheels = false;
         var position = currentCar.bodyRigidBody.transform.position;
         var rotation = currentCar.bodyRigidBody.transform.rotation;
         DestroyCar();

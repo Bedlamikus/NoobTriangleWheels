@@ -80,11 +80,9 @@ MonoBehaviour:
     motorSpeed: 10000
     boostMultiplier: 3
     boostKey: 304
-    airRotationTorque: 100
-    maxAngularSpeed: 500
+    airRotationTorque: 200
+    maxAngularSpeed: 700
   carPrefabDefaultWheels: {fileID: 8425264611611195266, guid: d0780b97b81eaed4d97b28f534740b36, type: 3}
-  carPrefabTriangleWheels: {fileID: 6060867090550323800, guid: f74e54de41fbe344599bf8fbb3cc3de6, type: 3}
   currentPrefab: {fileID: 0}
   spawnTransform: {fileID: 3151357752515738550}
   checkPoint: {x: 0, y: 0, z: 0}
-  mainMenu: 0

@@ -6,15 +6,6 @@ public class CarController2D : MonoBehaviour
     public WheelController2D leftWheel;
     public WheelController2D rightWheel;
 
-    public SpriteRenderer coloredBack;
-    public SpriteRenderer carBodySprite;
-
-    [Header("Vehicle Sprites")]
-    public Sprite[] vehicleSprites = new Sprite[4]; // Vehicle1, Vehicle2, Vehicle3, Vehicle4
-
-    [Header("Gun Sprites")]
-    public Gun[] guns; // Gun1, Gun2, Gun3, Gun4
-
     private float moveInput;
     private float rotateInput;
     private bool isBoosting;
@@ -22,8 +13,6 @@ public class CarController2D : MonoBehaviour
 
     private void Start()
     {
-        SetVehicleSprite(GetVehicleIndex());
-        SetGunSprite(GetGunIndex());
         if (freeze == true) return;
 
         GlobalEvents.PlayerMove.AddListener(SetDirection);
@@ -64,65 +53,5 @@ public class CarController2D : MonoBehaviour
         rightWheel.ApplyDrive(moveInput, isBoosting, LevelController.Instance.settings);
 
         carBody.AddTorque(rotateInput * LevelController.Instance.settings.airRotationTorque);
-    }
-
-    public void SetVehicleSprite(int vehicleIndex)
-    {
-        Debug.Log($"CarController2D: SetVehicleSprite called with vehicleIndex = {vehicleIndex}");
-        Debug.Log($"CarController2D: vehicleSprites.Length = {vehicleSprites.Length}");
-        Debug.Log($"CarController2D: carBodySprite = {(carBodySprite != null ? "not null" : "null")}");
-        
-        if (vehicleIndex >= 0 && vehicleIndex < vehicleSprites.Length && vehicleSprites[vehicleIndex] != null)
-        {
-            Debug.Log($"CarController2D: Setting sprite to vehicleSprites[{vehicleIndex}]");
-            carBodySprite.sprite = vehicleSprites[vehicleIndex];
-            SaveVehicleIndex(vehicleIndex);
-        }
-        else
-        {
-            Debug.LogError($"CarController2D: Invalid vehicleIndex {vehicleIndex} or sprite is null!");
-        }
-    }
-
-    private void SaveVehicleIndex(int vehicleIndex)
-    {
-        PlayerPrefs.SetInt("VEHICLE_INDEX", vehicleIndex);
-        PlayerPrefs.Save();
-    }
-
-    private int GetVehicleIndex()
-    {
-        return PlayerPrefs.GetInt("VEHICLE_INDEX", 0);
-    }
-
-    public void SetGunSprite(int gunIndex)
-    {
-        Debug.Log($"CarController2D: SetGunSprite called with gunIndex = {gunIndex}");
-        Debug.Log($"CarController2D: gunSprites.Length = {guns.Length}");
-        
-        if (gunIndex >= 0 && gunIndex < guns.Length && guns[gunIndex] != null)
-        {
-            Debug.Log($"CarController2D: Setting gun sprite to gunSprites[{gunIndex}]");
-            
-                for (int i = 0; i < guns.Length; i++)
-                    guns[i].gameObject.SetActive(false);
-                guns[gunIndex].gameObject.SetActive(true);
-                SaveGunIndex(gunIndex);
-        }
-        else
-        {
-            Debug.LogError($"CarController2D: Invalid gunIndex {gunIndex} or sprite is null!");
-        }
-    }
-
-    private void SaveGunIndex(int gunIndex)
-    {
-        PlayerPrefs.SetInt("GUN_INDEX", gunIndex);
-        PlayerPrefs.Save();
-    }
-
-    private int GetGunIndex()
-    {
-        return PlayerPrefs.GetInt("GUN_INDEX", 0);
     }
 }

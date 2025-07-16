@@ -11,8 +11,8 @@ public class DestructibleBlock : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var projectile = collision.GetComponent<Projectile>();
-        if (projectile == null) return;
+        //var projectile = collision.GetComponent<Projectile>();
+        //if (projectile == null) return;
 
         ApplyDamage();
     }
