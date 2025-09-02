@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c523e6378608c34f8c38f695461c1bc
+guid: 6612167e6bba7894ba54a8e20deb8fdc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_0"
+      name: Tries_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 288
-        width: 416
-        height: 528
+        x: 13
+        y: 553
+        width: 260
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc04ffaac9610ce49bf4336e8499b5fc
-      internalID: -1496297878
+      spriteID: 2e92259609c873540a169d26bd266d11
+      internalID: -274919295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_1"
+      name: Tries_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 664
-        width: 313
-        height: 176
+        x: 293
+        y: 617
+        width: 200
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7f930daa8d16cf4084ab4ba341d0365
-      internalID: -240965361
+      spriteID: 44b36035bb5af3446b9ef1a92406e29f
+      internalID: 276013043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_2"
+      name: Tries_2
       rect:
         serializedVersion: 2
-        x: 1027
-        y: 728
-        width: 197
-        height: 112
+        x: 551
+        y: 570
+        width: 122
+        height: 449
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 199f9a829a676c744ab03c2db8d2c8e3
-      internalID: -687874613
+      spriteID: 7ff566f081f268541a231354fbefa79d
+      internalID: -1540800159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_3"
+      name: Tries_3
       rect:
         serializedVersion: 2
-        x: 39
-        y: 144
-        width: 225
-        height: 144
+        x: 707
+        y: 564
+        width: 365
+        height: 454
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab05c7d76f9b60148a54983f7554f97d
-      internalID: 1748769339
+      spriteID: c2b95dcef059f984b85bb685c8fa1583
+      internalID: -443881888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_4"
+      name: Tries_4
       rect:
         serializedVersion: 2
-        x: 283
-        y: 152
-        width: 206
-        height: 120
+        x: 1092
+        y: 545
+        width: 267
+        height: 446
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f0fc29bdf35db0448cf268673cf068b
-      internalID: 1459187798
+      spriteID: 997d3b6dd40b4df4d8fb8be4146ad605
+      internalID: 1069479008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_5"
+      name: Tries_5
       rect:
         serializedVersion: 2
-        x: 680
-        y: 248
-        width: 248
-        height: 386
+        x: 1404
+        y: 575
+        width: 105
+        height: 381
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed147778abffb0c428f676678fa833ce
-      internalID: -2092300018
+      spriteID: 20776ecab7bd8b2498004b9c6c64518c
+      internalID: 705845842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_6"
+      name: Tries_6
       rect:
         serializedVersion: 2
-        x: 976
-        y: 8
-        width: 293
-        height: 488
+        x: 91
+        y: 89
+        width: 145
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39ec569f955496546b19fbdf224e3f53
-      internalID: 1952757954
+      spriteID: 712d0346d65f4e34aa461e74925f6dc4
+      internalID: -1184377731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_7"
+      name: Tries_7
       rect:
         serializedVersion: 2
-        x: 24
-        y: 8
-        width: 240
-        height: 136
+        x: 480
+        y: 88
+        width: 497
+        height: 419
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b1e5c74589bcb4b9a0c1b563334417
-      internalID: -473285997
+      spriteID: 174a2341fba794446875841f31a04fd8
+      internalID: -1207395713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_8"
+      name: Tries_8
       rect:
         serializedVersion: 2
-        x: 299
-        y: 16
-        width: 149
-        height: 76
+        x: 1004
+        y: 89
+        width: 227
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7d880fbced50e4cafcbca72c03785f
-      internalID: -188068574
+      spriteID: 3d73f84144d4a2e4aab9fec92a36addc
+      internalID: -1997771269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_9"
+      name: Tries_9
       rect:
         serializedVersion: 2
-        x: 520
-        y: 24
-        width: 249
-        height: 148
+        x: 1265
+        y: 89
+        width: 191
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beec0d10e513b534b89def528273d150
-      internalID: 629727958
+      spriteID: 3e7d2a508bb851a4b8c473542e594d79
+      internalID: -36805446
       vertices: []
       indices: 
       edges: []
@@ -343,16 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_0": -1496297878
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_1": -240965361
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_2": -687874613
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_3": 1748769339
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_4": 1459187798
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_5": -2092300018
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_6": 1952757954
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_7": -473285997
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_8": -188068574
-      "ChatGPT Image 2 \u0438\u044E\u043B. 2025 \u0433., 02_10_44-Photoroom_9": 629727958
+      Tries_0: -274919295
+      Tries_1: 276013043
+      Tries_2: -1540800159
+      Tries_3: -443881888
+      Tries_4: 1069479008
+      Tries_5: 705845842
+      Tries_6: -1184377731
+      Tries_7: -1207395713
+      Tries_8: -1997771269
+      Tries_9: -36805446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

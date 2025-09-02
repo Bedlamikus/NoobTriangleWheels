@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c78203fcba52a745a16f498ad256bf5
+guid: ed0be0f271cd0d8439233962ff2c3b5a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: GreenPlatforms_0
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 296
-        width: 384
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92acffa26e2a399498b7e11779ab449c
-      internalID: -1047443247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GreenPlatforms_1
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 264
-        width: 293
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fcc6b6cdb5b1c04d96db136c29593e1
-      internalID: 712152149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GreenPlatforms_2
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 256
-        width: 228
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c73d529247b2af24da224cfb59a08713
-      internalID: -242229276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GreenPlatforms_3
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 352
-        width: 184
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7827f3268950b3d4a84c4c0f5fa5de79
-      internalID: -17578628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      GreenPlatforms_0: -1047443247
-      GreenPlatforms_1: 712152149
-      GreenPlatforms_2: -242229276
-      GreenPlatforms_3: -17578628
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

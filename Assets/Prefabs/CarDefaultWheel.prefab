@@ -691,29 +691,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7292548015125445420}
     m_Modifications:
+    - target: {fileID: -7693229153140899771, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_Name
       value: Gun1
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.52
+      value: 2.6600003
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -776,29 +780,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7292548015125445420}
     m_Modifications:
+    - target: {fileID: -7693229153140899771, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_Name
       value: Gun3
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.52
+      value: 2.6600003
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -861,29 +869,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7292548015125445420}
     m_Modifications:
+    - target: {fileID: -7693229153140899771, guid: c1c3432b8794f354589d406623a288bb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_Name
       value: Gun0
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.52
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -946,29 +958,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7292548015125445420}
     m_Modifications:
+    - target: {fileID: -7693229153140899771, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_Name
       value: Gun2
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.52
+      value: 2.6600003
       objectReference: {fileID: 0}
     - target: {fileID: 7679220039916967291, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_LocalPosition.z

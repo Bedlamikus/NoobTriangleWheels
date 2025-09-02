@@ -32,6 +32,9 @@ public class LevelController : MonoBehaviour
 
     [SerializeField] private bool mainMenu = false;
 
+    [SerializeField] private int savedVehicleIndex;
+    [SerializeField] private int savedGunIndex;
+
     private bool triangleWheels
     {
         get
@@ -53,6 +56,8 @@ public class LevelController : MonoBehaviour
             return;
         }
         Instance = this;
+
+        LoadLevelIndex(currentLevel);
 
         GlobalEvents.Victroy.AddListener(LoadNextLevel);
         GlobalEvents.CheckPoint.AddListener(SetCheckPoint);
@@ -113,18 +118,26 @@ public class LevelController : MonoBehaviour
         currentCar = Instantiate(currentPrefab, position, rotation);
 
         // Всегда меняем спрайт на выбранный
-        int savedVehicleIndex = PlayerPrefs.GetInt("VEHICLE_INDEX", 0);
+        //int savedVehicleIndex = PlayerPrefs.GetInt("VEHICLE_INDEX", 0);
         currentCar.ChangeVehicleSprite(savedVehicleIndex);
 
         // Всегда меняем спрайт оружия на выбранный
-        int savedGunIndex = PlayerPrefs.GetInt("GUN_INDEX", 0);
+        //int savedGunIndex = PlayerPrefs.GetInt("GUN_INDEX", 0);
         currentCar.ChangeGunSprite(savedGunIndex);
 
         if (mainMenu == true)
             currentCar.Freeze();
     }
 
-
+    private void LoadLevelIndex(int index)
+    {
+        if (index >= SceneManager.sceneCountInBuildSettings)
+        {
+            currentLevel = 0;
+            index = 0;
+        }
+        SceneManager.LoadScene(index);
+    }
 
     private void LoadNextLevel()
     {
@@ -143,8 +156,8 @@ public class LevelController : MonoBehaviour
     {
         Debug.Log($"LevelController: ChangeVehicleSprite called with vehicleIndex = {vehicleIndex}");
         
-        PlayerPrefs.SetInt("VEHICLE_INDEX", vehicleIndex);
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("VEHICLE_INDEX", vehicleIndex);
+        //PlayerPrefs.Save();
         
         if (currentCar != null)
         {
@@ -161,8 +174,8 @@ public class LevelController : MonoBehaviour
     {
         Debug.Log($"LevelController: ChangeGunSprite called with gunIndex = {gunIndex}");
         
-        PlayerPrefs.SetInt("GUN_INDEX", gunIndex);
-        PlayerPrefs.Save();
+        //PlayerPrefs.SetInt("GUN_INDEX", gunIndex);
+        //PlayerPrefs.Save();
         
         if (currentCar != null)
         {
