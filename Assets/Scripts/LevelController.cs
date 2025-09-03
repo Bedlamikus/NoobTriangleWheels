@@ -135,8 +135,10 @@ public class LevelController : MonoBehaviour
         {
             currentLevel = 0;
             index = 0;
+            print($"LoadLevelIndex({index})");
+            print($"currentLevel = {currentLevel}");
+            SceneManager.LoadScene(index);
         }
-        SceneManager.LoadScene(index);
     }
 
     private void LoadNextLevel()
