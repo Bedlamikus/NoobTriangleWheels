@@ -19,4 +19,10 @@ public class GlobalEvents : MonoBehaviour
 
     public static UnityEvent StartShoot = new();
     public static UnityEvent StopShoot = new();
+
+    public static UnityEvent<int> AddCoins = new();
+    public static UnityEvent<int> SpendCoins = new();
+    public static UnityEvent<int> SpendCoinsError = new();
+    public static UnityEvent<int> SpendCoinsSucces = new();
+    public static UnityEvent<int> UpdateCoins = new();
 }
