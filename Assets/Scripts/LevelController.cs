@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt("LEVEL", 1);
+            return PlayerPrefs.GetInt("LEVEL", 0);
         }
         set
         {
@@ -145,7 +145,7 @@ public class LevelController : MonoBehaviour
     {
         currentLevel++;
         if (currentLevel >= SceneManager.sceneCountInBuildSettings)
-            currentLevel = 1;
+            currentLevel = 0;
         SceneManager.LoadScene(currentLevel);
     }
 

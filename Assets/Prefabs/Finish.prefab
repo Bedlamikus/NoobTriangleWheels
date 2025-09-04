@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 650960027440717021}
   - component: {fileID: 4596384491104508865}
   - component: {fileID: 5172202906181620978}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,9 +153,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3581504302431726683}
     m_Modifications:
+    - target: {fileID: 692914555126294576, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 692914555126294591, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 692914555337988648, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 692914555337988823, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: playOnAwake
@@ -209,6 +217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1740070945451022764, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2744666422765618814, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: playOnAwake
       value: 1
@@ -217,9 +229,21 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4893477114688839476, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248807900995106756, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5700784828077083704, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: m_Name
       value: Confetti_directional_multicolor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700784828077083704, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5700784828077083704, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: m_IsActive
@@ -228,6 +252,10 @@ PrefabInstance:
     - target: {fileID: 7962017427367066544, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250176067105482797, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8753307150262520581, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
       propertyPath: playOnAwake

@@ -7,6 +7,7 @@ public class DestructibleBlock : MonoBehaviour
     [SerializeField] private int countDestructLevels = 3;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private Color particlesColor;
 
     private int currentLevel = 0;
 
@@ -28,6 +29,7 @@ public class DestructibleBlock : MonoBehaviour
         else
         {
             GlobalEvents.AddCoins.Invoke(price);
+            GlobalEvents.SpawnDropCoin.Invoke(transform.position);
 
             _particleSystem.gameObject.SetActive(true);
             _particleSystem.gameObject.transform.SetParent(null);
@@ -35,5 +37,6 @@ public class DestructibleBlock : MonoBehaviour
 
             Destroy(gameObject);
         }
+        GlobalEvents.SpawnParticle.Invoke(particlesColor, transform.position);
     }
 }

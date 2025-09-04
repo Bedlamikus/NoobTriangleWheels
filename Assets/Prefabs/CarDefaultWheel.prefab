@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -177,7 +177,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 767cf4c49699eb943ba9911eb976f1ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -364,7 +364,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 767cf4c49699eb943ba9911eb976f1ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -693,7 +693,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7693229153140899771, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: eb4ca8a348168b24fbc62a3e5092507f, type: 3}
       propertyPath: m_Name
@@ -782,7 +782,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7693229153140899771, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: b48aacf73b47b894c9a3281f695a855a, type: 3}
       propertyPath: m_Name
@@ -871,7 +871,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7693229153140899771, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: c1c3432b8794f354589d406623a288bb, type: 3}
       propertyPath: m_Name
@@ -960,7 +960,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7693229153140899771, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7577021836097340452, guid: 9ff1852e5f5aed242813943da386df4d, type: 3}
       propertyPath: m_Name

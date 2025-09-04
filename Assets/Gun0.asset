@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6624940c5142f2a43b1ef6ac387075f0, type: 3}
   m_Name: Gun0
   m_EditorClassIdentifier: 
-  bulletSpeed: 1000
+  bulletSpeed: 2000
   cooldownBeetwenBullets: 0.3
   countBulletsPerTime: 1
   cooldownBeetwenShooting: 1

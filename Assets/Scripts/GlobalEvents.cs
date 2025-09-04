@@ -25,4 +25,7 @@ public class GlobalEvents : MonoBehaviour
     public static UnityEvent<int> SpendCoinsError = new();
     public static UnityEvent<int> SpendCoinsSucces = new();
     public static UnityEvent<int> UpdateCoins = new();
+
+    public static UnityEvent<Vector3> SpawnDropCoin = new();
+    public static UnityEvent<Color, Vector3> SpawnParticle = new();
 }
